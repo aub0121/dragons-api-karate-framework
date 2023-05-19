@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/SecurityAPITest[1:3]","start":1683678115758,"end":1683678117436,"title":"src\/test\/resources\/SecurityAPITest[1:3] 20:21:55.758-20:21:57.436 Create token with valid username and password."},{"id":2,"group":1,"content":"src\/test\/resources\/SecurityAPITest[2:14]","start":1683678117445,"end":1683678117770,"title":"src\/test\/resources\/SecurityAPITest[2:14] 20:21:57.445-20:21:57.770 Validate token with invalid username"},{"id":3,"group":1,"content":"src\/test\/resources\/SecurityAPITest[3:23]","start":1683678117777,"end":1683678118175,"title":"src\/test\/resources\/SecurityAPITest[3:23] 20:21:57.777-20:21:58.175 Validate token with invalid password","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
