@@ -1,3 +1,4 @@
+@Regression
 Feature: End to end account testing
 	
   Background: API test setup

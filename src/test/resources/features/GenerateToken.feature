@@ -1,3 +1,4 @@
+
 Feature: Generate token
 
 Scenario: Generate a valid token

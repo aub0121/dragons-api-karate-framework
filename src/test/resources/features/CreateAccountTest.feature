@@ -1,3 +1,4 @@
+@Regression
 Feature: Create account test
 
 Background: Set us test URL 
