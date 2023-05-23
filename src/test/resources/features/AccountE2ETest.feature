@@ -1,5 +1,6 @@
 Feature: End to end account testing
-
+	
+	@Regression
   Background: API test setup
     * def result = callonce read('GenerateToken.feature')
     And print result
