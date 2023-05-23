@@ -1,3 +1,4 @@
+@Regression
 Feature: home work 
 
 Background: Set up test URL 

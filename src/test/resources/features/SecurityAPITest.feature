@@ -1,5 +1,5 @@
+@Smoke @Regression
 Feature: API Test Security Section 
-
 
 Background:
 	Given url "https://tek-insurance-api.azurewebsites.net" 

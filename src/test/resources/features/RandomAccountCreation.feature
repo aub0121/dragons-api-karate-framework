@@ -1,3 +1,4 @@
+@Regression
 Feature: Random account creation 
 
 Background: Setup test generate token 
