@@ -1,5 +1,6 @@
 Feature: API Test Security Section 
 
+@Smoke
 Background:
 	Given url "https://tek-insurance-api.azurewebsites.net" 
 	And path "/api/token"
