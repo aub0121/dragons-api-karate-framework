@@ -32,7 +32,7 @@
 				<version>2.22.2</version>
 				<configuration>
 					<includes>
-						<include>SmokeRunner.java</include>
+						<include>${runner}.java</include>
 					</includes>
 				</configuration>
 			</plugin>
