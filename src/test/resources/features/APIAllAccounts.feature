@@ -1,4 +1,4 @@
-@Smoke
+@Regression
 Feature: API All Acounts
 
 Background: API test setup
